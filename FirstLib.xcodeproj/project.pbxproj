@@ -17,6 +17,7 @@
 		E264CB88235845EB002186C2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E264CB87235845EB002186C2 /* Preview Assets.xcassets */; };
 		E264CB8B235845EB002186C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E264CB89235845EB002186C2 /* LaunchScreen.storyboard */; };
 		E264CB96235845EB002186C2 /* FirstLibExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E264CB95235845EB002186C2 /* FirstLibExampleTests.swift */; };
+		E264CBA123584C7F002186C2 /* SwiftLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = E264CBA023584C7F002186C2 /* SwiftLib.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		E264CB91235845EB002186C2 /* FirstLibExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirstLibExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E264CB95235845EB002186C2 /* FirstLibExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstLibExampleTests.swift; sourceTree = "<group>"; };
 		E264CB97235845EB002186C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E264CBA023584C7F002186C2 /* SwiftLib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftLib.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 			children = (
 				E264CB6123582B9D002186C2 /* FirstLib.h */,
 				E264CB6223582B9D002186C2 /* Info.plist */,
+				E264CBA023584C7F002186C2 /* SwiftLib.swift */,
 			);
 			path = FirstLib;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 				TargetAttributes = {
 					E264CB5D23582B9D002186C2 = {
 						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1100;
 					};
 					E264CB6623582B9D002186C2 = {
 						CreatedOnToolsVersion = 11.0;
@@ -330,6 +334,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E264CBA123584C7F002186C2 /* SwiftLib.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,6 +514,7 @@
 		E264CB7323582B9D002186C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -524,6 +530,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.nvt.altp.FirstLib;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -532,6 +539,7 @@
 		E264CB7423582B9D002186C2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -555,6 +563,7 @@
 		E264CB7623582B9D002186C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FirstLibTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -572,6 +581,7 @@
 		E264CB7723582B9D002186C2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FirstLibTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
